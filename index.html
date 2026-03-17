@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dominion Onoja">
+  <meta name="description" content="Room homepage built with HTML, CSS and JavaScript.">
+  <meta property="og:title" content="Frontend Mentor | Room homepage">
+  <meta property="og:description" content="Room homepage built with HTML, CSS and JavaScript.">
+  <meta property="og:url" content="https://yourwebsite.com/room-homepage">
+  <meta property="og:site_name" content="Room homepage">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Room homepage</title>
+</head>
+<body class="bg-white">
+  <header class="page-header">
+    <nav class="nav-bar">
+      <div class="nav-bar__main grid">
+        <button id="menu-open" class="btn btn--menu-open" type="button" aria-label="open menu">
+          <img src="images/icon-hamburger.svg" alt="">
+        </button>
+        <div class="page-logo">
+          <img src="images/logo.svg" alt="page logo">
+        </div>
+      </div>
+      <div id="menu-tab-container" class="menu-tab-container">
+        <div id="menu-tab" class="menu-tab grid bg-white">
+          <button id="menu-close" class="btn btn--menu-close" type="button" aria-label="close menu">
+            <img src="images/icon-close.svg" alt="">
+          </button>
+          <ul class="menu-tab__list flex flex--space-between" role="menuitem">
+            <li class="menu-tab__item text-black ff-sans fs-5 fw-2 to-lower">Home</li>
+            <li class="menu-tab__item text-black ff-sans fs-5 fw-2 to-lower">Shop</li>
+            <li class="menu-tab__item text-black ff-sans fs-5 fw-2 to-lower">About</li>
+            <li class="menu-tab__item text-black ff-sans fs-5 fw-2 to-lower">Contact</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="carousel">
+        <div class="carousel__image">
+          <div class="picture-carousel flex">
+            <picture>
+              <source media="(min-width: 600px)" srcset="images/desktop-image-hero-1.jpg" />
+              <img src="images/mobile-image-hero-1.jpg" alt="furniture setup" />
+            </picture>
+            <picture>
+              <source media="(min-width: 600px)" srcset="images/desktop-image-hero-2.jpg" />
+              <img src="images/mobile-image-hero-2.jpg" alt="furniture setup" />
+            </picture>
+            <picture>
+              <source media="(min-width: 600px)" srcset="images/desktop-image-hero-3.jpg" />
+              <img src="images/mobile-image-hero-3.jpg" alt="furniture setup" />
+            </picture>
+          </div>
+        </div>
+        
+        <div class="carousel-control bg-black">
+          <button id="prev-btn" class="btn btn--carousel-control" type="button" aria-label="move to previous slide">
+            <img src="images/icon-angle-left.svg" alt="">
+          </button>
+          <button id="next-btn" class="btn btn--carousel-control" type="button" aria-label="move to next slide">
+            <img src="images/icon-angle-right.svg" alt="">
+          </button>
+        </div>
+
+        <div class="carousel__content">
+          <div class="article-carousel flex">
+            <article class="hero bg-white">
+              <div class="container">
+                <h2 class="hero__heading text-black ff-sans fs-1 fw-3">Discover innovative ways to decorate</h2>
+                <p class="hero__text text-grey-1 ff-sans fs-4 fw-1">We provide unmatched quality, comfort, and style for property owners across the country. 
+                  Our experts combine form and function in bringing your vision to life. Create a room in your 
+                  own style with our collection and make your property a reflection of you and what you love.</p>
+                <button class="btn btn--shop flex align-center">
+                  <span class="text-black ff-sans fs-4 fw-1 ls-1 to-upper">Shop now</span>
+                  <img src="images/icon-arrow.svg" alt="arrow icon">
+                </button>
+              </div>
+            </article>
+            <article class="hero bg-white">
+              <div class="container">
+                <h2 class="hero__heading text-black ff-sans fs-1 fw-3">We are available all across the globe</h2>
+                <p class="hero__text text-grey-1 ff-sans fs-4 fw-1">With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+                  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+                  store locator. Any questions? Don't hesitate to contact us today.</p>
+                <button class="btn btn--shop flex align-center">
+                  <span class="text-black ff-sans fs-4 fw-1 ls-1 to-upper">Shop now</span>
+                  <img src="images/icon-arrow.svg" alt="arrow icon">
+                </button>
+              </div>
+            </article>
+            <article class="hero bg-white">
+              <div class="container">
+                <h2 class="hero__heading text-black ff-sans fs-1 fw-3">Manufactured with the best materials</h2>
+                <p class="hero__text text-grey-1 ff-sans fs-4 fw-1">Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+                  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+                  experience in this industry, we understand what customers want for their home and office.</p>
+                <button class="btn btn--shop flex align-center">
+                  <span class="text-black ff-sans fs-4 fw-1 ls-1 to-upper">Shop now</span>
+                  <img src="images/icon-arrow.svg" alt="arrow icon">
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div>
+        <img src="images/image-about-dark.jpg" alt="">
+      </div>
+      <article class="about bg-white">
+        <div class="container container--about">
+          <h3 class="about__heading text-black ff-sans fs-2 fw-2 ls-2 to-upper">About our furniture</h3>
+          <p class="about__text text-grey-1 ff-sans fs-4 fw-1">Our multifunctional collection blends design and function to suit your individual taste.
+            Make each room unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+            or anything in between. Product specialists are available to help you create your dream space.</p>
+        </div>
+      </article>
+      <div>
+        <img src="images/image-about-light.jpg" alt="">
+      </div>
+    </section>
+  </main>
+  <footer class="attribution">
+    <div class="text-black ff-sans fs-4 fw-1 to-upper">
+      Challenge by <a class="text-grey-2 fw-2" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="text-grey-2 fw-2" href="#">Dominion</a>.
+    </div>
+  </footer>  
+  <script src="script.js"></script>
+</body>
+</html>
